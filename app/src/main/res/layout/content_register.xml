@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.myapplication.Register"
+    tools:showIn="@layout/activity_register"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="0.65"
+            android:weightSum="1">
+
+            <TextView
+                android:text="איזה סוג משתמש אתה ?"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tvchoose"
+                android:textSize="40sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:gravity="center"
+            android:id="@+id/rg1"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="274dp"
+            android:layout_weight="0.07">
+
+
+
+            <RadioButton
+                android:text="בעל עסק- הצגת העסק והעלאת אירועים"
+                android:layout_width="match_parent"
+                android:id="@+id/rd2"
+                android:checked="true"
+                android:onClick="registerAs"
+                android:layout_height="91dp" />
+
+            <RadioButton
+                android:text="פרטי- משתמש אורח שבאפשרוטתו להעלאות אירועים פרטיים"
+                android:layout_width="match_parent"
+                android:onClick="registerAs"
+                android:id="@+id/rd3"
+                android:checked="false"
+                android:layout_height="91dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
