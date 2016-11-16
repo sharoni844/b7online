@@ -63,4 +63,8 @@ Button btn1,btn2;
 
 
     }
+
+    public void guest(View view) {
+
+    }
 }

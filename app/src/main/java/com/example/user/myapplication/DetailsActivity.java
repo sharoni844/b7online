@@ -25,7 +25,6 @@ public class DetailsActivity extends AppCompatActivity {
         tvE=(TextView) findViewById(R.id.tvE);
         tvPass=(TextView) findViewById(R.id.tvPass);
         tvT=(TextView) findViewById(R.id.tvT);
-        tvtx=(TextView) findViewById(R.id.tvtx);
         tvA=(TextView) findViewById(R.id.tvA);
         tvH=(TextView) findViewById(R.id.tvH);
         tvNB=(TextView) findViewById(R.id.tvNB);
