@@ -19,13 +19,14 @@
             android:name=".Register"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".baseactivity"></activity>
-        <activity android:name=".Main2Activity"
-            android:label="Main2Activity"
+        <activity android:name=".DetailsActivity"
+            android:label="DetailsActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".baseactivity"
-            android:label="basic"
+            android:label="baseactivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Main2Activity"
+            android:label="Main2Activity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
