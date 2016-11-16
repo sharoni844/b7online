@@ -20,7 +20,7 @@
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DetailsActivity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".baseactivity"></activity>
     </application>
 
 </manifest>
