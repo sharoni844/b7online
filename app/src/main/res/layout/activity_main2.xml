@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.myapplication.Main2Activity"
+    android:weightSum="1">
+
+    <TextView
+        android:text="העדפותייך?!"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:id="@+id/textView" />
+
+    <CheckBox
+        android:text="מסעדות וברים"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/cb1" />
+
+    <CheckBox
+        android:text="קולנוע"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/cb2" />
+
+    <CheckBox
+        android:text="מסיבות והפקות"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb3" />
+
+    <CheckBox
+        android:text="מרכזים מסחריים"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb4" />
+
+    <CheckBox
+        android:text="אירועים חברתיים והרצאות"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb5" />
+
+    <CheckBox
+        android:text="הופעות"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb6" />
+
+    <CheckBox
+        android:text="אירועים תרבותיים"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb7" />
+
+    <CheckBox
+        android:text="אטרקציות למשפחה"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb8" />
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb9" />
+
+</LinearLayout>

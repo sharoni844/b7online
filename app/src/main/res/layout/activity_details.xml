@@ -1,169 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_details"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.myapplication.DetailsActivity">
+    tools:context="com.example.user.myapplication.DetailsActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/edname"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="שם מלא"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvname"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/edTB"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
         android:inputType="textPersonName"
         android:text="Name"
+        android:gravity="center"
         android:ems="10"
-        android:id="@+id/edName"
-        android:layout_height="30dp"
-        android:layout_marginTop="17dp"
-        android:layout_alignTop="@+id/linearLayout5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/edE"
-        android:layout_marginTop="17dp"
-        android:layout_below="@+id/edName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/editText4" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:layout_alignTop="@+id/edName"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:text="שם מלא"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvname"
-            android:layout_alignBottom="@+id/edName"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:gravity="center"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:text="אימייל"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvE"
-            tools:ignore="HardcodedText"
-            android:layout_below="@+id/tvPass"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="18dp" />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/edPass"
+                android:layout_below="@+id/edT"
+                android:layout_alignLeft="@+id/linearLayout6"
+                android:layout_weight="1" />
 
-        <TextView
-            android:text="סיסמה"
-            android:layout_width="55dp"
-            android:layout_height="27dp"
-            android:id="@+id/tvPass"
-            android:layout_below="@+id/tvname"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="33dp"
-            android:layout_weight="0.13" />
+            <TextView
+                android:text="אימייל"
+                android:layout_width="175dp"
+                android:layout_height="31dp"
+                android:id="@+id/tvE"
+                android:gravity="center"
+                tools:ignore="HardcodedText"
+                android:layout_below="@+id/tvPass"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.04" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:layout_alignParentBottom="true"
+    <TextView
+        android:text="סיסמה"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tvPass"
+        android:gravity="center"
+        android:layout_below="@+id/tvname"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <TextView
-            android:text="שם העסק"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvNB" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/edNB" />
-
-        <TextView
-            android:text="תחום"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvT" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/edT" />
-
-        <TextView
-            android:text="תיאור העסק"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvtx" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText6" />
-
-        <TextView
-            android:text="טלפון"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView10" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/editText7" />
-
-        <TextView
-            android:text="כתובת"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView11" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:ems="10"
-            android:id="@+id/editText8" />
-
-        <TextView
-            android:text="שעות פתיחה"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView12" />
-    </LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.03" />
 
     <EditText
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:inputType="numberPassword"
         android:ems="10"
-        android:id="@+id/edPass"
-        android:layout_below="@+id/edE"
-        android:layout_alignLeft="@+id/linearLayout6"
-        android:layout_alignStart="@+id/linearLayout6" />
+        android:id="@+id/edPass" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:gravity="center"
+            android:id="@+id/edTB"
+            android:layout_height="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="שם העסק"
+            android:visibility="visible"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNB"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edNB" />
+
+    <TextView
+        android:text="תחום"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="33dp"
+        android:id="@+id/tvT" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edT" />
+
+    <TextView
+        android:text="טלפון"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tvPH"
+        android:layout_weight="0.14" />
+
+    <EditText
+        android:layout_width="355dp"
+        android:layout_height="27dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/edPH" />
+
+    <TextView
+        android:text="שעות פתיחה"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvH"
+        android:gravity="center"
+        android:layout_weight="0.14" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/edH" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvA"
+        android:text="כתובת"
+        android:layout_weight="0.30"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edA" />
+
+    <Button
+        android:text="הירשם"
+        android:onClick="SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:id="@+id/btnR" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+</LinearLayout>

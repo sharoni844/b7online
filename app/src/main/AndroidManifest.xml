@@ -19,7 +19,8 @@
             android:name=".Register"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
