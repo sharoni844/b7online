@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ public class DetailsActivity extends AppCompatActivity {
     EditText edName,edTB,edE,edPass,edT,edPH,edA,edH,edNB;
     TextView tvname,tvE,tvPass,tvT,tvtx,tvA,tvH,tvNB,tvPH;
     LinearLayout ln1;
+    Button btnR;
 
 
     @Override
@@ -40,6 +42,7 @@ public class DetailsActivity extends AppCompatActivity {
         edNB=(EditText) findViewById(R.id.edNB);
         edPH=(EditText) findViewById(R.id.edPH);
         ln1=(LinearLayout) findViewById(R.id.ln1);
+        btnR=(Button) findViewById(R.id.btnR);
 
 
 
@@ -63,7 +66,7 @@ public class DetailsActivity extends AppCompatActivity {
             edNB.setVisibility(View.INVISIBLE);
             tvT.setVisibility(View.INVISIBLE);
             edT.setVisibility(View.INVISIBLE);
-            tvtx.setVisibility(View.INVISIBLE);
+
             edTB.setVisibility(View.INVISIBLE);
             tvPH.setVisibility(View.INVISIBLE);
             edPH.setVisibility(View.INVISIBLE);

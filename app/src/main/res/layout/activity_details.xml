@@ -162,6 +162,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="27dp"
+        android:visibility="visible"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/edNB" />

@@ -21,6 +21,13 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".baseactivity"></activity>
+        <activity android:name=".Main2Activity"
+            android:label="Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".baseactivity"
+            android:label="basic"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

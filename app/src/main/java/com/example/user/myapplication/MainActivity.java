@@ -59,12 +59,10 @@ Button btn1,btn2;
 
     }
 
-    public void registerAs(View view) {
-
-
-    }
 
     public void guest(View view) {
+        Intent intent= new Intent(this,baseactivity.class);
+        startActivity(intent);
 
     }
 }

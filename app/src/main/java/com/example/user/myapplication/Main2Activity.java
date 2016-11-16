@@ -2,6 +2,7 @@ package com.example.user.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CheckBox;
 
 public class Main2Activity extends AppCompatActivity {
@@ -20,4 +21,6 @@ CheckBox cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9;
         cb8=(CheckBox) findViewById(R.id.cb8);
         cb9=(CheckBox) findViewById(R.id.cb9);
     }
+
+
 }
